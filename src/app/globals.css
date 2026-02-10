@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Flipbook Styles */
+.flipbook {
+  width: 800px;
+  height: 400px;
+}
+
+.flipbook .page,
+.flipbook .double {
+  width: 400px;
+  height: 400px;
+  background-color: #f5f5f5;
+}
+
+.flipbook .double {
+  width: 800px;
+}
+
+.flipbook .page img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  margin: 0;
+}
